@@ -67,11 +67,11 @@ const view = { //和顯示有關的函式
     },
 
     renderScore(score) {
-        document.querySelector('.score').textContent = `Score: ${score}`
+        document.querySelector('.score').textContent = `你的分數是: ${score}`
     },
 
     renderTriedTimes(times) {
-        document.querySelector('.tried').textContent = `You've tried: ${times} times`
+        document.querySelector('.tried').textContent = `你嘗試了: ${times} 次`
     },
 
     appendWrongAnimation(...cards) {
@@ -91,7 +91,7 @@ const view = { //和顯示有關的函式
     <p>恭喜你完成了!</p>
     <br>
     <p>你的分數是: ${model.score}</p>
-    <p>你一共試了: ${model.triedTimes} 次才完成喔~</p>`
+    <p>你一共試了: ${model.triedTimes} 次才完成喔 </p>`
         const header = document.querySelector('#header')
         header.before(div)
     }
